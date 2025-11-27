@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.profile-header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.username {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.ig-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #efefef;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.ig-button:hover {
+  background: #ddd;
+}
+
+.stats {
+  display: flex;
+  gap: 25px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.stats span {
+  font-weight: bold;
+}
+
+.bio {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.gallery {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
