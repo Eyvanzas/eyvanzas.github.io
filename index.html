@@ -3,62 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Evan Profile</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Evan Matthew SP | Personal Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
 
-  <!-- ICONS -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+    header {
+      background: #0a0a23;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid white;
+      box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #0a0a23;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a0a23;
+      color: white;
+      margin-top: 40px;
+    }
+
+    /* Instagram Button */
+    .ig-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #E1306C;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      width: max-content;
+      transition: 0.2s;
+    }
+
+    .ig-btn:hover {
+      background: #c72b5f;
+    }
+
+    .ig-icon {
+      font-size: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="container">
+  <header>
+    <!-- Ganti EvanFoto.jpg dengan nama file fotomu -->
+    <img src="EvanFoto.jpg" alt="Evan Photo" />
+    <h1>Evan Matthew Sebastian Panjaitan</h1>
+    <p>Mahasiswa Sistem Informasi 2023 – Universitas Atma Jaya BSD</p>
+  </header>
 
-    <!-- PROFILE HEADER -->
-    <div class="profile-header">
-      <img src="EvanFoto.jpg" alt="Evan Foto" class="profile-photo" />
+  <section>
 
-      <div class="profile-info">
-
-        <div class="top-row">
-          <h2 class="username">evan.msp</h2>
-
-          <!-- Instagram Button -->
-          <a href="https://instagram.com/evan.msp" target="_blank" class="ig-button">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </div>
-
-        <div class="stats">
-          <div><span>25</span> posts</div>
-          <div><span>1,204</span> followers</div>
-          <div><span>300</span> following</div>
-        </div>
-
-        <p class="bio">
-          Evan Matthew  
-          <br />Tech Enthusiast | Developer | Coffee Lover  
-          <br />Belajar teknologi setiap hari ☕💻
-        </p>
-
-      </div>
+    <!-- ABOUT ME -->
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        Halo! Saya <b>Evan Matthew Sebastian Panjaitan</b>, mahasiswa
+        <b>Sistem Informasi angkatan 2023</b> dari <b>Universitas Atma Jaya BSD</b>.
+        Saya berusia <b>20 tahun</b>, lahir pada <b>28 Juni 2005</b>, dan tinggal di
+        <b>Ciledug, Banten</b>.
+      </p>
+      <p>
+        Saya juga pernah mengikuti organisasi kampus yaitu
+        <b>SMFBTI (Senat Mahasiswa Fakultas Biosains Teknologi dan Inovasi)</b>.
+      </p>
     </div>
 
-    <hr />
+    <!-- CONTACT -->
+    <div class="card">
+      <h2>Contact</h2>
 
-    <!-- GALLERY -->
-    <div class="gallery">
-      <img src="img1.jpg" />
-      <img src="img2.jpg" />
-      <img src="img3.jpg" />
-      <img src="img4.jpg" />
-      <img src="img5.jpg" />
-      <img src="img6.jpg" />
+      <p>Email: <b>your@email.com</b></p>
+
+      <a href="https://instagram.com/evan.msp" target="_blank" class="ig-btn">
+        <span class="ig-icon">📸</span> Instagram
+      </a>
     </div>
 
-  </div>
+  </section>
+
+  <footer>
+    © 2025 Evan Matthew SP. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
