@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #eaf2ff; /* biru muda pucat */
+      background: #eaf2ff;
       color: #333;
     }
 
@@ -26,7 +26,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 40px;
+      gap: 50px;
       flex-wrap: wrap;
     }
 
@@ -44,19 +44,20 @@
 
     .header-desc {
       margin-top: 15px;
-      max-width: 500px;
+      max-width: 520px;
       font-size: 1.05rem;
       line-height: 1.6;
       opacity: 0.9;
     }
 
+    /* ===== FOTO ===== */
     .header-photo img {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid white;
-      box-shadow: 0 0 10px rgba(255,255,255,0.5);
+      border: 5px solid white;
+      box-shadow: 0 0 15px rgba(255,255,255,0.6);
     }
 
     /* ===== SECTION ===== */
@@ -79,13 +80,6 @@
       color: #0a0a23;
     }
 
-    h3 {
-      margin-top: 30px;
-      color: #0a0a23;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 5px;
-    }
-
     /* ===== EXPERIENCE ===== */
     .experience-item {
       margin-top: 20px;
@@ -99,12 +93,12 @@
     }
 
     .experience-role {
-      margin-top: 5px;
+      margin-top: 6px;
       font-style: italic;
       color: #555;
     }
 
-    /* ===== CONTACT BUTTONS ===== */
+    /* ===== CONTACT ===== */
     .social-links {
       display: flex;
       gap: 15px;
@@ -160,6 +154,11 @@
         order: -1;
       }
 
+      .header-photo img {
+        width: 170px;
+        height: 170px;
+      }
+
       .header-desc {
         margin-left: auto;
         margin-right: auto;
@@ -202,6 +201,7 @@
   <!-- ===== CONTENT ===== -->
   <section>
 
+    <!-- ABOUT ME CARD -->
     <div class="card">
       <h2>About Me</h2>
       <p>
@@ -209,8 +209,11 @@
         with strong teamwork and communication abilities. Experienced in decision-making,
         event documentation, and design.
       </p>
+    </div>
 
-      <h3>Organizational Experience</h3>
+    <!-- ORGANIZATIONAL EXPERIENCE CARD -->
+    <div class="card">
+      <h2>Organizational Experience</h2>
 
       <div class="experience-item">
         <div class="experience-header">
@@ -243,6 +246,7 @@
       </div>
     </div>
 
+    <!-- CONTACT CARD -->
     <div class="card">
       <h2>Contact</h2>
       <p>Email: <b>evanmsp17@gmail.com</b></p>
@@ -252,7 +256,7 @@
           📸 Instagram
         </a>
 
-        <a href="https://www.linkedin.com/in/evan-matthew-3a6928339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        <a href="https://www.linkedin.com/in/evan-matthew-3a6928339"
            target="_blank"
            class="linkedin-btn">
           💼 LinkedIn
