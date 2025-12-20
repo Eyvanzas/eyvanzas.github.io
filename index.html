@@ -30,10 +30,6 @@
       flex-wrap: wrap;
     }
 
-    .header-text {
-      flex: 1;
-    }
-
     .header-text h1 {
       margin: 0;
       font-size: 2.4rem;
@@ -48,13 +44,12 @@
       box-shadow: 0 0 10px rgba(255,255,255,0.5);
     }
 
-    /* ===== BACKGROUND GRADIENT AREA ===== */
+    /* ===== GRADIENT AREA ===== */
     .gradient-bg {
       background: linear-gradient(135deg, #1e90ff, #2ecc71);
       padding: 60px 0;
     }
 
-    /* ===== SECTION ===== */
     section {
       max-width: 900px;
       margin: auto;
@@ -74,13 +69,37 @@
       color: #0a0a23;
     }
 
+    h3 {
+      margin-top: 30px;
+      color: #0a0a23;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 5px;
+    }
+
+    /* ===== EXPERIENCE ===== */
+    .experience-item {
+      margin-top: 20px;
+    }
+
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      flex-wrap: wrap;
+    }
+
+    .experience-role {
+      margin-top: 5px;
+      font-style: italic;
+      color: #555;
+    }
+
     /* ===== FOOTER ===== */
     footer {
       text-align: center;
       padding: 25px;
       background: linear-gradient(135deg, #1e90ff, #2ecc71);
       color: white;
-      font-weight: 500;
     }
 
     /* ===== Instagram Button ===== */
@@ -94,16 +113,11 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      width: max-content;
       transition: 0.2s;
     }
 
     .ig-btn:hover {
       background: #c72b5f;
-    }
-
-    .ig-icon {
-      font-size: 20px;
     }
 
     /* ===== RESPONSIVE ===== */
@@ -116,6 +130,11 @@
       .header-photo {
         order: -1;
       }
+
+      .experience-header {
+        flex-direction: column;
+        gap: 4px;
+      }
     }
   </style>
 </head>
@@ -126,12 +145,10 @@
   <header>
     <div class="header-container">
 
-      <!-- KIRI: TEKS -->
       <div class="header-text">
         <h1>Evan Matthew Sebastian Panjaitan</h1>
       </div>
 
-      <!-- KANAN: FOTO -->
       <div class="header-photo">
         <img src="EvanFoto.jpg" alt="Evan Photo">
       </div>
@@ -139,7 +156,7 @@
     </div>
   </header>
 
-  <!-- ===== GRADIENT AREA ===== -->
+  <!-- ===== CONTENT ===== -->
   <div class="gradient-bg">
     <section>
 
@@ -150,9 +167,42 @@
           A third-year Information Systems student from Atma Jaya Catholic University of Indonesia
           with strong teamwork and communication abilities. Experienced in decision-making,
           event documentation, and design, with a proactive and collaborative approach to both
-          academic and project-based environments. Demonstrates adaptability and a strong
-          interest in contributing effectively within multidisciplinary teams.
+          academic and project-based environments.
         </p>
+
+        <!-- ORGANIZATIONAL EXPERIENCE -->
+        <h3>Organizational Experience</h3>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <span>SMFBTI (Senat Mahasiswa Teknologi Biosains dan Inovasi)</span>
+            <span>2023 – 2025</span>
+          </div>
+          <div class="experience-role">
+            Staff of Community and Social Relations & Coordinator of Publication and Documentation
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <span>UAJ Basketball</span>
+            <span>2024 – 2025</span>
+          </div>
+          <div class="experience-role">
+            Coordinator of External
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <span>GenBI (Generasi Baru Indonesia)</span>
+            <span>2025</span>
+          </div>
+          <div class="experience-role">
+            Creative Media
+          </div>
+        </div>
+
       </div>
 
       <!-- CONTACT -->
@@ -160,14 +210,13 @@
         <h2>Contact</h2>
         <p>Email: <b>evanmsp17@gmail.com</b></p>
         <a href="https://instagram.com/evan.msp" target="_blank" class="ig-btn">
-          <span class="ig-icon">📸</span> Instagram
+          📸 Instagram
         </a>
       </div>
 
     </section>
   </div>
 
-  <!-- ===== FOOTER ===== -->
   <footer>
     © 2025 Evan Matthew SP. All Rights Reserved.
   </footer>
