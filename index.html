@@ -39,13 +39,6 @@
       font-size: 2.4rem;
     }
 
-    .header-text p {
-      margin-top: 15px;
-      font-size: 1.1rem;
-      line-height: 1.6;
-      opacity: 0.9;
-    }
-
     .header-photo img {
       width: 160px;
       height: 160px;
@@ -55,18 +48,24 @@
       box-shadow: 0 0 10px rgba(255,255,255,0.5);
     }
 
+    /* ===== BACKGROUND GRADIENT AREA ===== */
+    .gradient-bg {
+      background: linear-gradient(135deg, #1e90ff, #2ecc71);
+      padding: 60px 0;
+    }
+
     /* ===== SECTION ===== */
     section {
-      padding: 40px 20px;
       max-width: 900px;
       margin: auto;
+      padding: 0 20px;
     }
 
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
       margin-bottom: 30px;
     }
 
@@ -78,10 +77,10 @@
     /* ===== FOOTER ===== */
     footer {
       text-align: center;
-      padding: 20px;
-      background: #0a0a23;
+      padding: 25px;
+      background: linear-gradient(135deg, #1e90ff, #2ecc71);
       color: white;
-      margin-top: 40px;
+      font-weight: 500;
     }
 
     /* ===== Instagram Button ===== */
@@ -140,30 +139,33 @@
     </div>
   </header>
 
-  <!-- ===== CONTENT ===== -->
-  <section>
+  <!-- ===== GRADIENT AREA ===== -->
+  <div class="gradient-bg">
+    <section>
 
-    <!-- ABOUT ME -->
-    <div class="card">
-      <h2>About Me</h2>
-      <p>
-        A third-year Information Systems student from Atma Jaya Catholic University of Indonesia with a
-        strong teamwork and communication abilities, Experienced in decision-making, event documentation, and
-        design, with a proactive and collaborative approach to both academic and project-based environments.
-        Demonstrates adaptability and a strong interest in contributing effectively within multidisciplinary teams.
-      </p>
-    </div>
+      <!-- ABOUT ME -->
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          A third-year Information Systems student from Atma Jaya Catholic University of Indonesia
+          with strong teamwork and communication abilities. Experienced in decision-making,
+          event documentation, and design, with a proactive and collaborative approach to both
+          academic and project-based environments. Demonstrates adaptability and a strong
+          interest in contributing effectively within multidisciplinary teams.
+        </p>
+      </div>
 
-    <!-- CONTACT -->
-    <div class="card">
-      <h2>Contact</h2>
-      <p>Email: <b>evanmsp17@gmail.com</b></p>
-      <a href="https://instagram.com/evan.msp" target="_blank" class="ig-btn">
-        <span class="ig-icon">📸</span> Instagram
-      </a>
-    </div>
+      <!-- CONTACT -->
+      <div class="card">
+        <h2>Contact</h2>
+        <p>Email: <b>evanmsp17@gmail.com</b></p>
+        <a href="https://instagram.com/evan.msp" target="_blank" class="ig-btn">
+          <span class="ig-icon">📸</span> Instagram
+        </a>
+      </div>
 
-  </section>
+    </section>
+  </div>
 
   <!-- ===== FOOTER ===== -->
   <footer>
