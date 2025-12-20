@@ -6,119 +6,67 @@
   <title>Evan Matthew SP | Personal Website</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      color: #333;
-    }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+  }
 
-    /* HEADER */
-    header {
-      background: #0a0a23;
-      color: white;
-      padding: 60px 40px;
-    }
+  header {
+    background: #0a0a23;
+    color: white;
+    padding: 60px 40px;
+  }
 
+  .header-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .header-text {
+    flex: 1;
+  }
+
+  .header-text h1 {
+    margin: 0;
+    font-size: 2.4rem;
+  }
+
+  .header-text p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+
+  .header-photo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+  }
+
+  /* Responsive (HP) */
+  @media (max-width: 768px) {
     .header-container {
-      max-width: 1000px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .header-text {
-      flex: 1;
-    }
-
-    .header-text h1 {
-      margin: 0;
-      font-size: 2.4rem;
-    }
-
-    .header-text p {
-      margin-top: 15px;
-      font-size: 1.1rem;
-      line-height: 1.6;
-      opacity: 0.9;
-    }
-
-    .header-photo img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid white;
-      box-shadow: 0 0 10px rgba(255,255,255,0.5);
-    }
-
-    /* SECTION */
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      margin-top: 0;
-      color: #0a0a23;
-    }
-
-    /* FOOTER */
-    footer {
       text-align: center;
-      padding: 20px;
-      background: #0a0a23;
-      color: white;
-      margin-top: 40px;
+      justify-content: center;
     }
 
-    /* Instagram Button */
-    .ig-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: #E1306C;
-      color: white;
-      padding: 10px 16px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      width: max-content;
-      transition: 0.2s;
+    .header-photo {
+      order: -1;
     }
+  }
+</style>
 
-    .ig-btn:hover {
-      background: #c72b5f;
-    }
-
-    .ig-icon {
-      font-size: 20px;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .header-container {
-        text-align: center;
-        justify-content: center;
-      }
-
-      .header-photo {
-        order: -1;
-      }
-    }
-  </style>
 </head>
 
 <body>
