@@ -110,10 +110,12 @@
       gap: 15px;
       margin-top: 15px;
       flex-wrap: wrap;
+      align-items: center;
     }
 
     .ig-btn,
-    .linkedin-btn {
+    .linkedin-btn,
+    .gmail-btn {
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -123,6 +125,7 @@
       text-decoration: none;
       font-weight: bold;
       transition: 0.2s;
+      white-space: nowrap;
     }
 
     .ig-btn {
@@ -139,6 +142,14 @@
 
     .linkedin-btn:hover {
       background: #084b8a;
+    }
+
+    .gmail-btn {
+      background: #EA4335;
+    }
+
+    .gmail-btn:hover {
+      background: #c23321;
     }
 
     /* ===== FOOTER ===== */
@@ -213,12 +224,10 @@
 
       <div class="experience-item">
         <div class="experience-header">
-          <span>GenBI (Generasi Baru Indonesia)</span>
+          <span>GenBI</span>
           <span>2025 - Present</span>
         </div>
-        <div class="experience-role">
-          Creative Media
-        </div>
+        <div class="experience-role">Creative Media</div>
       </div>
 
       <div class="experience-item">
@@ -226,9 +235,7 @@
           <span>UAJ Basketball</span>
           <span>2024 – 2025</span>
         </div>
-        <div class="experience-role">
-          Coordinator of External
-        </div>
+        <div class="experience-role">Coordinator of External</div>
       </div>
 
       <div class="experience-item">
@@ -247,23 +254,6 @@
     <div class="card">
       <h2>Contact</h2>
 
-    <div class="social-links">
-  <a href="mailto:evanmsp17@gmail.com" class="gmail-btn">
-    <i class="fa-solid fa-envelope"></i> Email
-  </a>
-
-  <a href="https://instagram.com/evan.msp" target="_blank" class="ig-btn">
-    <i class="fa-brands fa-instagram"></i> Instagram
-  </a>
-
-  <a href="https://www.linkedin.com/in/evan-matthew-3a6928339"
-     target="_blank"
-     class="linkedin-btn">
-    <i class="fa-brands fa-linkedin"></i> LinkedIn
-  </a>
-</div>
-
-
       <div class="social-links">
         <a href="https://instagram.com/evan.msp" target="_blank" class="ig-btn">
           <i class="fa-brands fa-instagram"></i> Instagram
@@ -273,6 +263,11 @@
            target="_blank"
            class="linkedin-btn">
           <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+
+        <a href="mailto:evanmsp17@gmail.com" class="gmail-btn">
+          <i class="fa-solid fa-envelope"></i> Email —
+          evanmsp17@gmail.com
         </a>
       </div>
     </div>
