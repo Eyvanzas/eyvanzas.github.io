@@ -30,17 +30,11 @@
       flex-wrap: wrap;
     }
 
-    .header-text {
-      flex: 1;
-    }
-
     .header-text h1 {
       margin: 0;
       font-size: 2.6rem;
-      font-weight: bold;
     }
 
-    /* SUBTITLE (INTEREST) */
     .header-subtitle {
       margin-top: 10px;
       font-size: 1.2rem;
@@ -48,7 +42,6 @@
       color: #2ecc71;
     }
 
-    /* DESCRIPTION */
     .header-desc {
       margin-top: 15px;
       max-width: 500px;
@@ -116,20 +109,19 @@
       color: #555;
     }
 
-    /* ===== FOOTER ===== */
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: linear-gradient(135deg, #1e90ff, #2ecc71);
-      color: white;
+    /* ===== CONTACT BUTTONS ===== */
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+      flex-wrap: wrap;
     }
 
-    /* ===== Instagram Button ===== */
-    .ig-btn {
+    .ig-btn,
+    .linkedin-btn {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: #E1306C;
       color: white;
       padding: 10px 16px;
       border-radius: 8px;
@@ -138,8 +130,28 @@
       transition: 0.2s;
     }
 
+    .ig-btn {
+      background: #E1306C;
+    }
+
     .ig-btn:hover {
       background: #c72b5f;
+    }
+
+    .linkedin-btn {
+      background: #0A66C2;
+    }
+
+    .linkedin-btn:hover {
+      background: #084b8a;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: linear-gradient(135deg, #1e90ff, #2ecc71);
+      color: white;
     }
 
     /* ===== RESPONSIVE ===== */
@@ -172,7 +184,6 @@
   <header>
     <div class="header-container">
 
-      <!-- TEXT -->
       <div class="header-text">
         <h1>Evan Matthew Sebastian Panjaitan</h1>
 
@@ -181,14 +192,11 @@
         </div>
 
         <div class="header-desc">
-         
-        Experienced in organizational Media, Publication and Documentation,
-        strong interest in business analysis, system design, and collaborative 
-        problem-solving. 
+          A third-year Information Systems student from Atma Jaya Catholic University of Indonesia
+          with a strong interest in business analysis, system design, and collaborative problem-solving.
         </div>
       </div>
 
-      <!-- PHOTO -->
       <div class="header-photo">
         <img src="EvanFoto.jpg" alt="Evan Photo">
       </div>
@@ -242,12 +250,22 @@
 
       </div>
 
+      <!-- CONTACT -->
       <div class="card">
         <h2>Contact</h2>
         <p>Email: <b>evanmsp17@gmail.com</b></p>
-        <a href="https://instagram.com/evan.msp" target="_blank" class="ig-btn">
-          📸 Instagram
-        </a>
+
+        <div class="social-links">
+          <a href="https://instagram.com/evan.msp" target="_blank" class="ig-btn">
+            📸 Instagram
+          </a>
+
+          <a href="https://www.linkedin.com/in/evan-matthew-3a6928339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+             target="_blank"
+             class="linkedin-btn">
+            💼 LinkedIn
+          </a>
+        </div>
       </div>
 
     </section>
