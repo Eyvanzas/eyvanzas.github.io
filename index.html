@@ -17,7 +17,7 @@
     header {
       background: #0a0a23;
       color: white;
-      padding: 60px 40px;
+      padding: 80px 40px;
     }
 
     .header-container {
@@ -30,9 +30,31 @@
       flex-wrap: wrap;
     }
 
+    .header-text {
+      flex: 1;
+    }
+
     .header-text h1 {
       margin: 0;
-      font-size: 2.4rem;
+      font-size: 2.6rem;
+      font-weight: bold;
+    }
+
+    /* SUBTITLE (INTEREST) */
+    .header-subtitle {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #2ecc71;
+    }
+
+    /* DESCRIPTION */
+    .header-desc {
+      margin-top: 15px;
+      max-width: 500px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      opacity: 0.9;
     }
 
     .header-photo img {
@@ -131,6 +153,11 @@
         order: -1;
       }
 
+      .header-desc {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       .experience-header {
         flex-direction: column;
         gap: 4px;
@@ -145,10 +172,21 @@
   <header>
     <div class="header-container">
 
+      <!-- TEXT -->
       <div class="header-text">
         <h1>Evan Matthew Sebastian Panjaitan</h1>
+
+        <div class="header-subtitle">
+          Interested in System Analyst | Seeking Internship Opportunity
+        </div>
+
+        <div class="header-desc">
+          A third-year Information Systems student from Atma Jaya Catholic University of Indonesia
+          with a strong interest in business analysis, system design, and collaborative problem-solving.
+        </div>
       </div>
 
+      <!-- PHOTO -->
       <div class="header-photo">
         <img src="EvanFoto.jpg" alt="Evan Photo">
       </div>
@@ -160,17 +198,14 @@
   <div class="gradient-bg">
     <section>
 
-      <!-- ABOUT ME -->
       <div class="card">
         <h2>About Me</h2>
         <p>
           A third-year Information Systems student from Atma Jaya Catholic University of Indonesia
           with strong teamwork and communication abilities. Experienced in decision-making,
-          event documentation, and design, with a proactive and collaborative approach to both
-          academic and project-based environments.
+          event documentation, and design.
         </p>
 
-        <!-- ORGANIZATIONAL EXPERIENCE -->
         <h3>Organizational Experience</h3>
 
         <div class="experience-item">
@@ -205,7 +240,6 @@
 
       </div>
 
-      <!-- CONTACT -->
       <div class="card">
         <h2>Contact</h2>
         <p>Email: <b>evanmsp17@gmail.com</b></p>
