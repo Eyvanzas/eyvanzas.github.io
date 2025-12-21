@@ -48,8 +48,19 @@
       color: #7dd3fc;
     }
 
+    /* SUB JUDUL BARU */
+    .header-edu {
+      margin-top: 14px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #c7d2fe;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
     .header-desc {
-      margin-top: 15px;
+      margin-top: 14px;
       max-width: 520px;
       font-size: 1.05rem;
       line-height: 1.6;
@@ -128,29 +139,14 @@
       white-space: nowrap;
     }
 
-    .ig-btn {
-      background: #E1306C;
-    }
+    .ig-btn { background: #E1306C; }
+    .ig-btn:hover { background: #c72b5f; }
 
-    .ig-btn:hover {
-      background: #c72b5f;
-    }
+    .linkedin-btn { background: #0A66C2; }
+    .linkedin-btn:hover { background: #084b8a; }
 
-    .linkedin-btn {
-      background: #0A66C2;
-    }
-
-    .linkedin-btn:hover {
-      background: #084b8a;
-    }
-
-    .gmail-btn {
-      background: #EA4335;
-    }
-
-    .gmail-btn:hover {
-      background: #c23321;
-    }
+    .gmail-btn { background: #EA4335; }
+    .gmail-btn:hover { background: #c23321; }
 
     /* ===== FOOTER ===== */
     footer {
@@ -176,7 +172,8 @@
         height: 170px;
       }
 
-      .header-desc {
+      .header-desc,
+      .header-edu {
         margin-left: auto;
         margin-right: auto;
       }
@@ -202,9 +199,17 @@
           Interested in System Analyst | Seeking Internship Opportunity
         </div>
 
+        <!-- SUB JUDUL BARU -->
+        <div class="header-edu">
+          🎓 3rd Year Information Systems Student — UNIKA Atma Jaya Jakarta
+        </div>
+
         <div class="header-desc">
-          A third-year Information Systems student from Atma Jaya Catholic University of Indonesia
-          with a strong interest in business analysis, system design, and collaborative problem-solving.
+          An experienced in managing organizational social media, conducting event
+          documentation, and producing creative design materials. Demonstrates strong coordination skills in
+          leading and managing division members, combined with solid problem-solving abilities. Known for
+          adaptability, teamwork, and a proactive approach in supporting organizational goals and project-based
+          initiatives.
         </div>
       </div>
 
@@ -218,14 +223,13 @@
   <!-- ===== CONTENT ===== -->
   <section>
 
-    <!-- ORGANIZATIONAL EXPERIENCE -->
     <div class="card">
       <h2>Organizational Experience</h2>
 
       <div class="experience-item">
         <div class="experience-header">
           <span>GenBI</span>
-          <span>2025 - Present</span>
+          <span>2025 – Present</span>
         </div>
         <div class="experience-role">Creative Media</div>
       </div>
@@ -250,7 +254,6 @@
       </div>
     </div>
 
-    <!-- CONTACT -->
     <div class="card">
       <h2>Contact</h2>
 
@@ -266,8 +269,8 @@
         </a>
 
         <a href="mailto:evanmsp17@gmail.com" class="gmail-btn">
-          <i class="fa-solid fa-envelope"></i> Email —
-          evanmsp17@gmail.com
+          <i class="fa-solid fa-envelope"></i>
+          Email — evanmsp17@gmail.com
         </a>
       </div>
     </div>
